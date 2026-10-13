@@ -1,0 +1,83 @@
+<!-- asignatura radiobutton
+ profesor select
+ horas input
+ informacion textarea
+ dias de la semana checkbox-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario1.css">
+    <title></title>
+</head>
+<body>
+    <h1>Asignaturas</h1>
+    <form action="formulario1.php" method="get">
+        <input type="radio" name="asignatura" value="Servidor" id="servidor">
+        <label for="servidor">Servidor</label><br>
+        <input type="radio" name="asignatura" value="Cliente" id="cliente">
+        <label for="cliente">Cliente</label><br>
+        <input type="radio" name="asignatura" value="Interface" id="interface">
+        <label for="interface">Interface</label><br>
+        <input type="radio" name="asignatura" value="Sostenibilidad" id="sostenibilidad">
+        <label for="sostenibilidad">Sostenibilidad</label><br>
+        <input type="radio" name="asignatura" value="IPE2" id="ipe2">
+        <label for="ipe2">IPE2</label><br>
+        <input type="radio" name="asignatura" value="Digitalización" id="digitalizacion">
+        <label for="digitalizacion">Digitalización</label><br>
+        <input type="radio" name="asignatura" value="OPT" id="opt">
+        <label for="opt">OPT</label><br>
+        <input type="radio" name="asignatura" value="Despliegue" id="despliegue">
+        <label for="despliegue">Despliegue</label><br>
+        <input type="radio" name="asignatura" value="PIMOD" id="pimod">
+        <label for="pimod">PIMOD</label><br>
+
+        <br/>
+
+        <select name="profesor" id="profesor">
+            <option value="">Selecciona un profesor</option>
+            <option>Isabel</option>
+            <option>Alberto</option>
+            <option>Ernesto</option>
+            <option>Santiago</option>
+            <option>Luis</option>
+        </select>
+
+        <br/>
+
+        <label for="horas">Introduce cuantas horas dura:</label>
+        <input type="number" id="horas" name="horas" min="0">
+
+        <br/>
+
+        <textarea name="informacion" placeholder="Información adicional..."></textarea>
+
+        <br/>
+
+        <label>Días de la semana:</label>
+        
+        <br>
+
+        <input type="checkbox" name="dias" value="Lunes" id="lunes">
+        <label for="lunes">Lunes</label><br>
+
+        <input type="checkbox" name="dias" value="Martes" id="martes">
+        <label for="martes">Martes</label><br>
+
+        <input type="checkbox" name="dias" value="Miércoles" id="miercoles">
+        <label for="miercoles">Miércoles</label><br>
+
+        <input type="checkbox" name="dias" value="Jueves" id="jueves">
+        <label for="jueves">Jueves</label><br>
+
+        <input type="checkbox" name="dias" value="Viernes" id="viernes">
+        <label for="viernes">Viernes</label><br>
+
+        <br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

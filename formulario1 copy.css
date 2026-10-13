@@ -1,0 +1,40 @@
+html{
+    /*width:1300px;*/
+    background-color: red;
+}
+
+body {
+font-family: Arial, sans-serif;
+background-color: #f2f2f2;
+margin: 2%; /* 20px / 1000px * 100 = 2% */
+}
+
+h1 {
+text-align: center;
+}
+
+form {
+background-color: white;
+padding: 2%; /* 20px / 1000px * 100 = 2% */
+width: 30%; /* 300px / 1000px * 100 = 30% */
+margin: auto;
+border: 1px solid #ccc;
+}
+
+input, select, textarea {
+margin-top: 1%; /* 10px / 1000px * 100 = 1% */
+margin-bottom: 1%; /* / 10px / 1000px * 100 = 1% */
+}
+
+textarea {
+width: 95%; /* 285px / 300px * 100 = 95% */
+height: 10%; /* 80px / 800px * 100 = 10%, suponiendo un contenedor de 800px de alto */
+}
+
+input {
+padding: 1% 2%; /* 10px / 1000px * 100 = 1%; 20px / 1000px * 100 = 2% */
+background-color: lightblue;
+border: none;
+}
+
+

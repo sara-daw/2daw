@@ -1,0 +1,46 @@
+html {
+    width: 1300px;
+    background-color: red;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 20px; /* Deja 20px de separación respecto a los bordes de la página */
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    background-color: white;
+    padding: 20px; /* Deja 20px entre el contenido del formulario y su borde */
+    width: 300px; /* El contenido ocupa 300px de ancho */
+    margin: auto; /* Reparte el espacio horizontal sobrante para centrar el formulario */
+    border: 1px solid #ccc; /* Añade 1px de borde a cada lado */
+
+    /* Ancho total: 300px de contenido + 40px de padding
+       + 2px de borde = 342px */
+}
+
+input, select, textarea {
+    margin-top: 10px; /* Deja 10px de separación por arriba */
+    margin-bottom: 10px; /* Deja 10px de separación por abajo */
+}
+
+textarea {
+    width: 258px; /* 300px de contenido del formulario - 40px de padding
+                     - 2px de borde = 258px disponibles */
+    height: 80px; /* Permite escribir en un área de 80px de alto */
+}
+
+input {
+    padding: 10px 20px; /* Añade 10px arriba y abajo, y 20px a izquierda y derecha */
+    background-color: lightblue;
+    border: none;
+
+    /* El ancho final depende del ancho del contenido del input
+       más 40px de padding horizontal. */
+}
+
