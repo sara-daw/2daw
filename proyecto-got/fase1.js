@@ -1,0 +1,33 @@
+import { Arma  } from "./clases/Arma.js";
+import { Casa  } from "./clases/Casa.js";
+import { Personaje  } from "./clases/Personaje.js";
+import { Reino  } from "./clases/Reino.js";
+
+let aguja = new Arma("Aguja",15,"espada");
+let garra = new Arma("Garra",25,"espada");
+let arya = new Personaje("Arya Stark",40,true);
+let jaime = new Personaje("Jaime Lannister",30,true);
+let jon = new Personaje("Jonv Snow",20,true);
+let casaStark = new Casa("Stark","Ejemplo de lema",[]);
+let casaLannister = new Casa("Lannister","Ejemplo de lema",[]);
+let reinoPoniente = new Reino("Poniente",undefined,[]);
+
+reinoPoniente.añadirCasa(casaStark);
+reinoPoniente.añadirCasa(casaLannister);
+jon.arma = garra;
+arya.arma = aguja;
+jon.casa = casaStark;
+arya.casa = casaStark;
+jaime.casa = casaLannister;
+casaStark.aniadirMiembro(jon);
+casaStark.aniadirMiembro(arya);
+casaLannister.aniadirMiembro(jaime);
+reinoPoniente.rey = jaime;
+reinoPoniente.listarCasas();
+reinoPoniente.rey;
+casaStark.listarMiembros();
+jon.presentacion();
+arya.presentacion();
+jaime.presentacion();
+garra.descripcion();
+aguja.descripcion();
